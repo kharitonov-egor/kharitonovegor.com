@@ -13,7 +13,3 @@ RewriteRule ^(.*)$ $1.html
 
 ##Create Error Pages
 ErrorDocument 404 /errors/404.html
-
-Redirect 301 "tg" "https://t.me/kharitonov_egor"
-Redirect 301 "git" https://github.com/kharitonov-egor
-Redirect 301 "vk" https://vk.com/kharitonov_egor
