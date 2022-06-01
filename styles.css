@@ -1,15 +1,17 @@
 .container {
-    max-width: 50%;
-    margin: 0% 25% 0% 25%;
+    position: relative;
 }
 
 .header {
     background-color: #F1F1F1;
-    text-align: center;
     padding: 20px;
 
 }
 
 .ebalo {
     border-radius: 15%;
+    position: absolute;
+
+    width: 10vmax;
+    height: 10vmin;
 }
