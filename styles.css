@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+:root {
+    --bg-color:#edeef0;
+    --con-color: white;
+}
+
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #edeef0;
+    background-color: var(--bg-color);
+    transition: background-color 0.35s;
 }
 
 div {
@@ -18,11 +25,39 @@ div {
     height: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--con-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    color:black;
+    transition: color 0.35s;
+    transition: background-color 0.35s;
+    transition: box-shadow 0.35s;
 }
 
 p {
     font-size: 16px;
     text-align: justify;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.headerButtons {
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: var(--con-color);
+    margin-right: 15px;
+}
+
+.buttonsImages {
+    height: 30px;
+    width: 30px;
 }

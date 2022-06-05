@@ -8,16 +8,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="images/favicon.ico">
-        <title>Kharitonov Egor</title>
+        <title id="titleName">Kharitonov Egor</title>
 
     </head>
 
-    <body>
+    <body id="body">
         
-        <div class="container">
-            <h1>Egor Kharitonov</h1>
-            <p>test</p>
+        <div class="container" id="container">
+
+            <div class="headerButtons">
+
+                <button value="Dark theme" id="DarkButton" class="buttons">
+                    <img src="images/moon.png" class="buttonsImages" id="DarkButtonImage">
+                </button>
+    
+                <button value="Поменять язык" id="languagebutton" class="buttons">
+                    <img src="images/ru.png" class="buttonsImages" id="LanguageButtonImage">
+                </button>
+                
+            </div>
+
+            <h1 id="MyName">Egor Kharitonov</h1>
+            <p id="helloworld">Hello World!</p>
+            
         </div>
+        
         
         <script src="script.js"></script>
     </body>
