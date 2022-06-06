@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
-    --bg-color:#edeef0;
-    --con-color: white;
+    --bg-color-white:#edeef0;
+    --main-color-white: white;
+    --header-color-white: #185e98;
+
+    --bg-color-dark: #12110f;
+    --main-color-dark: black;
+    --header-color-dark: #185e98;
+
+    --padding-page: 20px;
 }
 
 
@@ -11,8 +18,8 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--bg-color);
-    transition: background-color 0.35s;
+    background-color: var(--bg-color-white);
+    transition: 0.35s;
 }
 
 div {
@@ -24,12 +31,8 @@ div {
     width: 700px;
     height: 100%;
     margin: 0 auto;
-    background-color: var(--con-color);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    color:black;
-    transition: color 0.35s;
-    transition: background-color 0.35s;
-    transition: box-shadow 0.35s;
+    background-color: var(--main-color-white);
+    transition: 0.35s;
 }
 
 p {
@@ -45,11 +48,10 @@ h1 {
 .header {
     height: 60px;
     margin: auto;
-    background-color: ;
-    padding-left: 20px;
+    background-color: var(--header-color-white);
+    padding-left: var(--padding-page);
     padding-top: 15px;
     padding-bottom: 15px;
-
 
 }
 
@@ -58,7 +60,7 @@ h1 {
     height: 30px;
     padding: 0;
     border: none;
-    background-color: var(--con-color);
+    background-color: var(--header-color-white);
     margin-right: 15px;
 }
 
@@ -72,7 +74,10 @@ h1 {
 }
 
 .main {
-    padding-left: 20px;
+    background-color: var(--main-color-white);
+    color:black;
+    transition: 0.35s;
+    padding: var(--padding-page);
 }
 
 .headerIcon {
@@ -82,5 +87,5 @@ h1 {
 }
 
 .headerIconWrapper {
-    border-radius: 15%;
+    border-radius: 20%;
 }

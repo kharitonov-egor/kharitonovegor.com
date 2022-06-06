@@ -7,6 +7,8 @@ const helloworld = document.querySelector('#helloworld')
 const titleName = document.querySelector('#titleName')
 const DarkButtonImage = document.querySelector('#DarkButtonImage')
 const LanguageButtonImage = document.querySelector('#LanguageButtonImage')
+const main = document.querySelector('#main')
+const header = document.querySelector('#header')
 
 var root = document.querySelector(':root')
 
@@ -14,18 +16,25 @@ let DarkFlag = 1;
 
 darkthemebutton.onclick = function () {
     if (DarkFlag == 1){
-        root.style.setProperty('--bg-color','#424242');
-        root.style.setProperty('--con-color','#212121');
+        body.style.backgroundColor = "var(--bg-color-dark)"
+        main.style.backgroundColor = "var(--main-color-dark)"
+        header.style.backgroundColor = "var(--header-color-dark)"
+        DarkButton.style.backgroundColor = "var(--header-color-dark)"
+        container.style.backgroundColor = "var(--main-color-dark)"
+
         DarkButtonImage.src = "images/sun.png"
-        container.style.color= 'white';
-        container.style.boxShadow =  "0 4px 0px 0 rgba(0, 0, 0, 10)";
+        main.style.color= 'white';
         DarkFlag = 0
+
     } else if (DarkFlag==0){
-        root.style.setProperty('--bg-color','#edeef0');
-        root.style.setProperty('--con-color','white');
+        body.style.backgroundColor = "var(--bg-color-white)"
+        main.style.backgroundColor = "var(--main-color-white)"
+        header.style.backgroundColor = "var(--header-color-white)"
+        DarkButton.style.backgroundColor = "var(--header-color-white)"
+        container.style.backgroundColor = "var(--main-color-white)"
+
         DarkButtonImage.src = "images/moon.png"
-        container.style.color= 'black';
-        container.style.boxShadow =  "0 4px 0px 0 rgba(0, 0, 0, 0.1)";
+        main.style.color= 'black';
         DarkFlag = 1
     }
 }
@@ -37,15 +46,12 @@ languagebutton.onclick = function () {
         MyName.innerHTML = "Егор Харитонов"
         helloworld.innerHTML = "Привет, мир!"
         titleName.innerHTML = "Харитонов Егор"
-        darkthemebutton.value = "Тёмная тема"
-        languagebutton.value = "Change language"
         LanguageButtonImage.src="images/us.png"
         LanguageFlag = 0
     } else if (LanguageFlag==0){
         MyName.innerHTML = "Egor Kharitonov"
         helloworld.innerHTML = "Hello, world!"
         titleName.innerHTML = "Kharitonov Egor"
-        languagebutton.value = "Поменять язык"
         LanguageButtonImage.src="images/ru.png"
         LanguageFlag = 1
     }
