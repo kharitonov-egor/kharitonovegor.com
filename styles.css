@@ -24,7 +24,6 @@ div {
     width: 700px;
     height: 100%;
     margin: 0 auto;
-    padding:15px;
     background-color: var(--con-color);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     color:black;
@@ -43,12 +42,14 @@ h1 {
     margin: 0;
 }
 
-.headerButtons {
+.header {
     height: 60px;
-    width: 700px;
     margin: auto;
-    background-color: blue;
-    padding:15px;
+    background-color: ;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
 
 }
 
@@ -64,4 +65,22 @@ h1 {
 .buttonsImages {
     height: 30px;
     width: 30px;
+}
+
+.headerButtons {
+    float: right;
+}
+
+.main {
+    padding-left: 20px;
+}
+
+.headerIcon {
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+
+.headerIconWrapper {
+    border-radius: 15%;
 }
