@@ -22,8 +22,8 @@ darkthemebutton.onclick = function () {
         DarkButton.style.backgroundColor = "var(--header-color-dark)"
         container.style.backgroundColor = "var(--main-color-dark)"
 
+        body.style.color= 'var(--text-color-dark)'
         DarkButtonImage.src = "images/sun.png"
-        main.style.color= 'white';
         DarkFlag = 0
 
     } else if (DarkFlag==0){
@@ -34,7 +34,7 @@ darkthemebutton.onclick = function () {
         container.style.backgroundColor = "var(--main-color-white)"
 
         DarkButtonImage.src = "images/moon.png"
-        main.style.color= 'black';
+        body.style.color= 'var(--text-color-white)';
         DarkFlag = 1
     }
 }
