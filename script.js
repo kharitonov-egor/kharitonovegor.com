@@ -18,14 +18,14 @@ darkthemebutton.onclick = function () {
         root.style.setProperty('--con-color','#212121');
         DarkButtonImage.src = "images/sun.png"
         container.style.color= 'white';
-        container.style.boxShadow =  "0 4px 8px 0 rgba(0, 0, 0, 10)";
+        container.style.boxShadow =  "0 4px 0px 0 rgba(0, 0, 0, 10)";
         DarkFlag = 0
     } else if (DarkFlag==0){
         root.style.setProperty('--bg-color','#edeef0');
         root.style.setProperty('--con-color','white');
         DarkButtonImage.src = "images/moon.png"
         container.style.color= 'black';
-        container.style.boxShadow =  "0 4px 8px 0 rgba(0, 0, 0, 0.1)";
+        container.style.boxShadow =  "0 4px 0px 0 rgba(0, 0, 0, 0.1)";
         DarkFlag = 1
     }
 }
