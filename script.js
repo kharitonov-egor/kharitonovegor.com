@@ -9,6 +9,9 @@ const DarkButtonImage = document.querySelector('#DarkButtonImage')
 const LanguageButtonImage = document.querySelector('#LanguageButtonImage')
 const main = document.querySelector('#main')
 const header = document.querySelector('#header')
+const ContactsButton = document.querySelector('#ContactsButton')
+const mainText = document.querySelector('#mainText')
+const mainContacts = document.querySelector('#mainContacts')
 
 var root = document.querySelector(':root')
 
@@ -58,3 +61,8 @@ languagebutton.onclick = function () {
     
 }
 
+ContactsButton.onclick = function () {
+    mainText.style.display = "none"
+    mainContacts.style.display = "block"
+
+}
