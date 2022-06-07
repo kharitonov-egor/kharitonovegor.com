@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
 
 :root {
-    --bg-color-white:#e9e9e9;
+    --bg-color-white:#ededed;
     --main-color-white: white;
-    --header-color-white: rgba(56,97,251,1);
+    --header-color-white: white;
 
     --bg-color-dark: #353535;
     --main-color-dark: #121212;
-    --header-color-dark: rgba(56,97,251,1);
+    --header-color-dark: #121212;
 
     --text-color-white: black;
     --text-color-dark: #f0f0f0;
 
-    --padding-page: 20px;
+    --shadow-color-white: 3px 0px 3px rgba(0,0,0,0.1),-3px 0px 3px rgba(0,0,0,0.1); 
+    --shadow-color-dark: 3px 0px 3px rgba(0,0,0,0.1),-3px 0px 3px rgba(0,0,0,0.1); 
+
+    --padding-page: 25px;
 }
 
 
@@ -23,7 +26,7 @@ body {
     height: 100vh;
     background-color: var(--bg-color-white);
     color: var(--text-color-white);
-    transition: 0.35s;
+    
 }
 
 div {
@@ -36,7 +39,7 @@ div {
     height: 100%;
     margin: 0 auto;
     background-color: var(--main-color-white);
-    transition: 0.35s;
+    box-shadow: var(--shadow-color-white);
 }
 
 p {
@@ -55,7 +58,7 @@ h1 {
     padding-left: var(--padding-page);
     padding-top: 15px;
     padding-bottom: 15px;
-    transition: 0.35s;
+    
 
 }
 
@@ -66,6 +69,7 @@ h1 {
     border: none;
     background-color: var(--header-color-white);
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .buttonsImages {
@@ -80,7 +84,8 @@ h1 {
 .main {
     background-color: var(--main-color-white);
     padding: var(--padding-page);
-    transition: 0.35s;
+    padding-top: 0;
+    
 }
 
 .headerIcon {
@@ -97,7 +102,6 @@ h1 {
 .headerlinks {
     float: right;
     margin: auto;
-    margin-right: 30px;
     padding: 0;
     width: 300px;
     height: 30px;
@@ -107,10 +111,19 @@ h1 {
     cursor: pointer;
 }
 
+.headerTextWrapper {
+    float: right;
+    margin-right: 30px;
+}
+
 .mainText {
     display: block;
 }
 
 .mainContacts {
     display: none;
+}
+
+a {
+    color: var(--text-color-white)
 }
