@@ -18,6 +18,9 @@
     --padding-page: 25px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -58,8 +61,8 @@ h1 {
     padding-left: var(--padding-page);
     padding-top: 15px;
     padding-bottom: 15px;
-    
-
+    position: sticky;
+    top: 0;
 }
 
 .buttons {
@@ -127,3 +130,19 @@ h1 {
 a {
     color: var(--text-color-white)
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
