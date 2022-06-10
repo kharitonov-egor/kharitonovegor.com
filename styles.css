@@ -1,4 +1,7 @@
+/* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+
+/* BASIC */
 
 :root {
     --bg-color-white:#ededed;
@@ -36,7 +39,6 @@ div {
     box-sizing: border-box;
 }
 
-
 .container {
     width: 700px;
     height: 100%;
@@ -45,14 +47,11 @@ div {
     box-shadow: var(--shadow-color-white);
 }
 
-p {
-    font-size: 16px;
+p, h1 {
     margin: 0;
 }
 
-h1 {
-    margin: 0;
-}
+/* HEADER */
 
 .header {
     height: 60px;
@@ -84,13 +83,6 @@ h1 {
     float: right;
 }
 
-.main {
-    background-color: var(--main-color-white);
-    padding: var(--padding-page);
-    padding-top: 0;
-    
-}
-
 .headerIcon {
     height: 30px;
     width: 30px;
@@ -119,6 +111,14 @@ h1 {
     margin-right: 30px;
 }
 
+/* MAIN */
+
+.main {
+    background-color: var(--main-color-white);
+    padding: var(--padding-page);
+    padding-top: 0;
+}
+
 .mainText {
     display: block;
 }
@@ -130,6 +130,8 @@ h1 {
 a {
     color: var(--text-color-white)
 }
+
+/* SCROLLING BAR */
 
 ::-webkit-scrollbar {
     width: 10px;
