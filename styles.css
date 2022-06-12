@@ -5,12 +5,12 @@
 
 :root {
     --bg-color-white:#ededed;
-    --main-color-white: white;
-    --header-color-white: white;
+    --main-color-white: #fff;
+    --header-color-white: #fff;
 
     --bg-color-dark: #353535;
-    --main-color-dark: #121212;
-    --header-color-dark: #121212;
+    --main-color-dark: #222;
+    --header-color-dark: #222;
 
     --text-color-white: black;
     --text-color-dark: #f0f0f0;
@@ -62,6 +62,7 @@ p, h1 {
     padding-bottom: 15px;
     position: sticky;
     top: 0;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 .buttons {
@@ -121,10 +122,12 @@ p, h1 {
 
 .mainText {
     display: block;
+    margin-top: var(--padding-page);
 }
 
 .mainContacts {
     display: none;
+    margin-top: var(--padding-page);
 }
 
 a {
@@ -135,16 +138,16 @@ a {
 
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
   
  ::-webkit-scrollbar-track {
     background: #f1f1f1;
-  }
+}
   
 ::-webkit-scrollbar-thumb {
     background: #888;
-  }
+}
   
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}
