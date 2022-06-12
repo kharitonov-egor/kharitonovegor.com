@@ -8,9 +8,9 @@
     --main-color-white: #fff;
     --header-color-white: #fff;
 
-    --bg-color-dark: #353535;
-    --main-color-dark: #222;
-    --header-color-dark: #222;
+    --bg-color-dark: #0e0e0f;
+    --main-color-dark: #272727;
+    --header-color-dark: #272727;
 
     --text-color-white: black;
     --text-color-dark: #f0f0f0;
@@ -32,7 +32,7 @@ body {
     height: 100vh;
     background-color: var(--bg-color-white);
     color: var(--text-color-white);
-    
+    transition: all 250ms;
 }
 
 div {
