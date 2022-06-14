@@ -3,24 +3,6 @@
 
 /* BASIC */
 
-:root {
-    --bg-color-white:#ededed;
-    --main-color-white: #fff;
-    --header-color-white: #fff;
-
-    --bg-color-dark: #0e0e0f;
-    --main-color-dark: #272727;
-    --header-color-dark: #272727;
-
-    --text-color-white: black;
-    --text-color-dark: #f0f0f0;
-
-    --shadow-color-white: 3px 0px 3px rgba(0,0,0,0.1),-3px 0px 3px rgba(0,0,0,0.1); 
-    --shadow-color-dark: 3px 0px 3px rgba(0,0,0,0.1),-3px 0px 3px rgba(0,0,0,0.1); 
-
-    --padding-page: 25px;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -30,8 +12,8 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--bg-color-white);
-    color: var(--text-color-white);
+    background-color: #222;
+    color: #f1f1f1;
     transition: all 250ms;
 }
 
@@ -43,91 +25,11 @@ div {
     width: 700px;
     height: 100%;
     margin: 0 auto;
-    background-color: var(--main-color-white);
-    box-shadow: var(--shadow-color-white);
+
 }
 
 p, h1 {
     margin: 0;
-}
-
-/* HEADER */
-
-.header {
-    height: 60px;
-    margin: auto;
-    background-color: var(--header-color-white);
-    padding-left: var(--padding-page);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    position: sticky;
-    top: 0;
-    border-bottom: 1px solid #e8e8e8;
-}
-
-.buttons {
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    border: none;
-    background-color: var(--header-color-white);
-    margin-right: 15px;
-    cursor: pointer;
-}
-
-.buttonsImages {
-    height: 30px;
-    width: 30px;
-}
-
-.headerButtons {
-    float: right;
-}
-
-.headerIcon {
-    height: 30px;
-    width: 30px;
-    float: left;
-}
-
-.headerIconWrapper {
-    border-radius: 20%;
-}
-
-
-.headerlinks {
-    float: right;
-    margin: auto;
-    padding: 0;
-    width: 300px;
-    height: 30px;
-    text-align: right;
-    line-height: 30px;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.headerTextWrapper {
-    float: right;
-    margin-right: 30px;
-}
-
-/* MAIN */
-
-.main {
-    background-color: var(--main-color-white);
-    padding: var(--padding-page);
-    padding-top: 0;
-}
-
-.mainText {
-    display: block;
-    margin-top: var(--padding-page);
-}
-
-.mainContacts {
-    display: none;
-    margin-top: var(--padding-page);
 }
 
 a {
