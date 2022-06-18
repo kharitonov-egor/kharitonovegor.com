@@ -33,9 +33,11 @@ body {
 p, h1 {
     margin: 0;
 }
+
 header {
     text-align: center;
     margin-bottom: 5px;
+    height: 200px;
 }
 .icon {
     width: 100px;
@@ -44,6 +46,7 @@ header {
     margin: 1px 0 0 1px;
     box-shadow: 0 0 0 2px #fff;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 a {
@@ -53,14 +56,20 @@ a {
 main {
     margin: 0;
     padding: 0;
-    height: 150px;
-    width: 50px;
+    height: 350px;
+    width: 60px;
 }
 
 .SocialIcons {
     flex: top;
     margin-top: 15px;
 }
+
+.SocialIcons:hover {
+    padding-left: 10px;
+    transition: 200ms all ease;
+}
+
 
 /* SCROLLING BAR */
 
