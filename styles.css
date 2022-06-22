@@ -17,6 +17,7 @@ body {
     transition: all 250ms;
 }
 
+@media only screen and (min-width: 400px) {
 .container {
     width: 450px;
     height: 100%;
@@ -27,7 +28,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+}
 
 p, h1 {
     margin: 0;
