@@ -63,6 +63,15 @@ main {
     margin-left: 10px;
 }
 
+.SocialLinks {
+    margin-bottom: 20px;
+}
+
+.centered {
+    width: 50%;
+    margin: 0 auto;
+}
+
 /* SCROLLING BAR */
 
 ::-webkit-scrollbar {
