@@ -11,6 +11,7 @@
         <meta property="og:image" content="images/ava.jpg"/>
         <meta name="twitter:image" content="images/ava.jpg">
         <meta property="vk:image" content="images/ava.jpg">
+        
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="images/favicon.ico">
         <title id="titleName">Kharitonov Egor</title>
@@ -31,13 +32,19 @@
         <div class="container" id="container">
 
             <header>
-                <img src="images/me2.jpg" class="icon">
-                <h1>Egor Kharitonov</h1>
-                <p>Future senior developer of something</p>
+                
+                <div>
+                    <img src="images/me2.jpg" class="icon">
+                </div>
+
+                <div>
+                    <h1>Egor Kharitonov</h1>
+                    <p>Future senior developer of something</p>    
+                </div>
+
             </header>
 
             <main>
-                <div class="SocialLinks">
                     
                 <a href="https://t.me/kharitonov_egor" target="_blank">
                     <img src="images/tg.png" width="45" height="45" class="SocialIcons">
@@ -55,22 +62,16 @@
                     <img src="images/cv.png" width="45" height="45" class="SocialIcons">
                 </a>
 
-
                 <button onclick="copyToClipboard('EmailToCopy')" class="HidenButton" id="EmailCopy">
                     <img src="images/email.png" width="45" height="45" class="SocialIcons">
                 </button>
 
-
-                </div>
-
                 <p id="EmailCopyConfirmation" style="display: none">Email was copied to clipboard</p>
-
-
-                <p style="display: none" id="EmailToCopy">ega.khar@gmail.com</p>
-            
+                            
             </main>
 
-        
+        <p style="display: none" id="EmailToCopy">ega.khar@gmail.com</p>
+
         <script src="script.js"></script>
 
         <!--
