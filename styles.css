@@ -55,8 +55,8 @@ h3 {
 
 }
 .icon {
-    width: 22.5vh;
-    height: 22.5vh;
+    width: 175px;
+    height: 175px;
     border-radius: 19px;
     margin: 1px 0 0 1px;
     box-shadow: 0 0 0 2px #fff;
@@ -68,15 +68,15 @@ a {
 }
 
 main {
-    height: 10vh;
+    height: 70px;
     text-align: center;
 }
 
 .SocialIcons {
     margin-right: 10px;
     margin-left: 10px;
-    height: 7.5vh;
-    width: 7.5vh;
+    height: 70px;
+    width: 70px;
 }
 
 #EmailCopyConfirmation {
