@@ -50,7 +50,7 @@ h3 {
 
 @media only screen and (max-width: 400px) {
     .container {
-        width: 98vw;
+        width: 90vw;
     }
 
     .header {
@@ -61,7 +61,7 @@ h3 {
 .icon {
     width: 175px;
     height: 175px;
-    border-radius: 19px;
+    border-radius: 25px;
     margin: 1px 0 0 1px;
     box-shadow: 0 0 0 4px #fff;
     margin-bottom: 10px;
@@ -104,11 +104,11 @@ main {
 }
 
 .Socialsfirstrow {
-    margin-bottom: 10px;
+    margin-bottom: 12.5px;
 }
 
 .CurrentProjects {
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: left;
 }
 
